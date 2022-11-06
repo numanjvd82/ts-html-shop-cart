@@ -1,0 +1,20 @@
+{
+  "name": "ts-html-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch-tailwind": "npx tailwindcss -i ./src/index.css -o ./public/css/styles.css -w",
+    "build": "npx tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.8.4"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.2"
+  }
+}

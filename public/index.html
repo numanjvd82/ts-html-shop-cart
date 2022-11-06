@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeScript Example Project</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <section>
+      <header class="bg-gradient-to-r from-green-300 to-green-700 h-14">
+        <h1 class="p-2 text-3xl font-semibold text-center">Shopping Cart</h1>
+      </header>
+
+      <form class="flex items-center justify-center" id="form-container">
+        <div class="m-2">
+          <label for="sections">Sections:</label>
+          <select
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 inline-block w-full p-2.5"
+            name="sections"
+            id="sections"
+          >
+            <option selected value="none">Select a section</option>
+            <option value="fruits-and-vegetables">Fruits and Vegetables</option>
+            <option value="grocery">Grocery</option>
+            <option value="other">Others</option>
+          </select>
+        </div>
+        <div class="m-2">
+          <label for="todo">Todo:</label>
+          <input
+            type="text"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+            placeholder="Add A Todo"
+            id="todo-input"
+          />
+        </div>
+      </form>
+      <div class="text-center">
+        <button
+          type="submit"
+          id="btn-submit"
+          class="px-4 py-2 m-2 bg-green-500 rounded-md"
+        >
+          ADD
+        </button>
+      </div>
+    </section>
+
+    <section class="md:flex md:justify-center">
+      <!-- Box # 1 -->
+      <article
+        class="flex-1 pb-2 m-2 overflow-auto border-2 border-red-400 min-h-[150px] max-h-[600px]"
+      >
+        <header class="font-semibold bg-red-400">
+          <span>Fruits and Vegetables</span>
+        </header>
+        <ul id="fruits-and-vegetables" class="list-disc"></ul>
+      </article>
+      <!-- Box # 2 -->
+      <article
+        class="flex-1 pb-2 m-2 overflow-auto border-2 border-red-400 min-h-[150px] max-h-[600px]"
+      >
+        <header class="font-semibold bg-red-400">
+          <span>Grocery</span>
+        </header>
+        <ul id="grocery" class="list-disc"></ul>
+      </article>
+
+      <!-- Box # 3 -->
+      <article
+        class="flex-1 pb-2 m-2 overflow-auto border-2 border-red-400 min-h-[150px] max-h-[600px]"
+      >
+        <header class="font-semibold bg-red-400">
+          <span>Others</span>
+        </header>
+        <ul id="others" class="list-disc"></ul>
+      </article>
+    </section>
+
+    <script defer src="./js/script.js"></script>
+  </body>
+</html>
